@@ -18,120 +18,12 @@
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="800">
         <meta property="og:image:height" content="600">
-        
+        <link rel="stylesheet" href="./styles.css"></link>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="dat.gui.min.js"></script>
-        <style>
-            * {
-                user-select: none;
-            }
-
-            html, body {
-                overflow: hidden;
-            }
-
-            body {
-                margin: 0;
-                position: fixed;
-                width: 100%;
-                height: 100%;
-            }
-
-            .wrapper{
-              width:100%;
-              height:100%;
-              padding: 0;
-              margin: 0;
-            }
-
-            .main-title{
-              position:absolute;
-              color: white;
-              background-color: rgba(0,0,0,0);
-              font-family: Helvetica;
-              margin: 0;
-              padding: 0;
-              left:50%;
-              top:50%;
-              transform: translate(-50%,-50%);
-              transition: 2s color 1s;
-              line-height: 1.1249;
-            }
-            .main-name{
-              background-color:0;
-              color:white;
-              transition: 2s background-color 1s, 1s color 1s;
-            }
-            .main-title:hover > .main-name{
-              background-color:white;
-              color:black;
-            }
-            .icones{
-              display:flex;
-              position:absolute;
-              bottom:-60%;
-              justify-content: space-evenly;
-              width:100%;
-              font-size:35px;
-            }
-            .icones a {
-              color:white !important;
-              transition: 200ms all;
-            }
-            .icones a:hover {
-              text-shadow: 0 0 12px rgba(255,255,255,0.9);
-            }
-            canvas {
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-            #app{
-              color:white;
-              transition:1s color 1s;
-            }
-            .main-title:hover > #app{
-              color:rgb(0, 199, 0) ;
-            }
-            .dg {
-                opacity: 0.9;
-            }
-
-            .dg .property-name {
-                overflow: visible;
-            }
-
-            .bigFont {
-                font-size: 150%;
-                color: #8C8C8C;
-            }
-
-            .cr.function.appBigFont {
-                font-size: 150%;
-                line-height: 27px;
-                background-color: #2F4F4F;
-            }
-
-            .cr.function.appBigFont .property-name {
-                float: none;
-            }
-
-            .cr.function.appBigFont .icon {
-                position: sticky;
-                bottom: 27px;
-            }
-            @media screen and (max-width: 597px){
-              #app{
-                font-size:12px;
-              }
-              .icones{
-                font-size:30px;
-                bottom:-30%;
-              }
-            }
-        </style>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
     <body>
       <div class="wrapper">
@@ -144,10 +36,15 @@
             <a href='https://www.linkedin.com/in/danton-rodrigues-mariano-9906bb1a5/'><i class="fab fa-linkedin"></i></a>
             <a href='./Danton Mariano CV.pdf' target="_blank"><i class="fas fa-file-invoice"></i></a>
           </span>
+          <div class="carousel">
+            <a href='https://www.calcularesistor.xyz'><img class="crsl-img" src="./1.jpg" alt="CalculaResistor"></a>
+            <a href='http://lapidareinstituto.rds.land/curso-online-injectables-and-facelift-fresh-frozen-specimen'><img class="crsl-img" src="./3.png" alt="lapidareinstituto"></a>
+          </div>
         </h1>
         <canvas></canvas>
       </div>
     </body>
     <script src="./script.js"></script>
     <script src="./texto.js"></script>
+    <script src="./jq.js"></script>
 </html>

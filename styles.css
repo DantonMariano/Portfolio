@@ -1,0 +1,145 @@
+* {
+  user-select: none;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel{
+  position: absolute !important;
+  bottom: -90px;
+  width: 100%;
+  height: 30px;
+}
+.crsl-img{
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  position: relative;
+  top: 5px;
+  transition: filter 500ms;
+  filter: drop-shadow(0);
+  image-rendering: -webkit-optimize-contrast;
+}
+.crsl-img:hover{
+  filter: drop-shadow( 0 0 4px rgba(255,255,255, 0.3));
+}
+.slick-slide{
+  opacity:0;
+  transition:400ms opacity;
+}
+.slick-current {
+  opacity:1;
+}
+.main-title {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 2s color 1s;
+  line-height: 1.1249;
+}
+.main-name {
+  background-color: 0;
+  color: white;
+  transition: 2s background-color 1s, 1s color 1s;
+}
+.main-title:hover > .main-name {
+  background-color: white;
+  color: black;
+}
+.icones {
+  display: flex;
+  position: absolute;
+  bottom: -60%;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 35px;
+}
+.icones a {
+  color: white !important;
+  transition: 200ms all;
+}
+.icones a:hover {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#app {
+  color: white;
+  transition: 1s color 1s;
+}
+.main-title:hover > #app {
+  color: rgb(0, 199, 0);
+}
+.dg {
+  opacity: 0.9;
+}
+
+.dg .property-name {
+  overflow: visible;
+}
+
+.bigFont {
+  font-size: 150%;
+  color: #8c8c8c;
+}
+
+.cr.function.appBigFont {
+  font-size: 150%;
+  line-height: 27px;
+  background-color: #2f4f4f;
+}
+
+.cr.function.appBigFont .property-name {
+  float: none;
+}
+
+.cr.function.appBigFont .icon {
+  position: sticky;
+  bottom: 27px;
+}
+@media screen and (max-width: 597px) {
+  #app {
+    font-size: 12px;
+  }
+  
+  .icones {
+    font-size: 30px;
+    bottom: -30%;
+  }
+
+  .slick-list{
+    width: 100px;
+    position: relative;
+    left: -7vw;
+    height: 100px;
+  }
+  
+}
