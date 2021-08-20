@@ -1,6 +1,6 @@
 'use strict';
 
-const canvas = document.getElementsByTagName('canvas')[0];
+const canvas = document.getElementById('fluidJS');
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
@@ -1336,7 +1336,7 @@ function resizeCanvas () {
     }
 }
 
-canvas.addEventListener('mousemove', e => {
+window.addEventListener('mousemove', e => {
     if (!config.SHOW_MOUSE_MOVEMENT) return;
     pointers[0].moved = true;
     pointers[0].dx = (e.offsetX - pointers[0].x) * 5.0;
@@ -1345,7 +1345,7 @@ canvas.addEventListener('mousemove', e => {
     pointers[0].y = e.offsetY;
 });
 
-canvas.addEventListener('touchmove', e => {
+window.addEventListener('touchmove', e => {
     e.preventDefault();
     const touches = e.targetTouches;
     for (let i = 0; i < touches.length; i++) {
@@ -1358,12 +1358,12 @@ canvas.addEventListener('touchmove', e => {
     }
 }, false);
 
-canvas.addEventListener('mouseenter', () => {
+window.addEventListener('mouseenter', () => {
     pointers[0].down = true;
     pointers[0].color = config.POINTER_COLOR.getRandom();
 });
 
-canvas.addEventListener('touchstart', e => {
+window.addEventListener('touchstart', e => {
     if (!config.SPLAT_ON_CLICK) return;
     e.preventDefault();
     const touches = e.targetTouches;
@@ -1379,7 +1379,7 @@ canvas.addEventListener('touchstart', e => {
     }
 });
 
-canvas.addEventListener("mousedown", () => {
+window.addEventListener("mousedown", () => {
     if (!config.SPLAT_ON_CLICK) return;
     multipleSplats(parseInt(Math.random() * 20) + 5);
 });

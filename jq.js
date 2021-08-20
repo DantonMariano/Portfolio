@@ -7,3 +7,12 @@ $('.carousel').slick({
   slidesToShow: 1,
   infinite:false,
 });
+
+$(document).ready(()=>{
+    setTimeout(()=>{
+        $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+        startWriting()
+    },
+        4747
+    )
+})
