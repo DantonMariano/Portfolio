@@ -26,25 +26,44 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
     <body>
-      <div class="wrapper">
+      <canvas id="fluidJS"></canvas>
+      <div class="section">
         <h1 class="main-title">
           <b class="main-name">DANTON MARIANO</b><br>
           <sub id="app" style="position: relative;top:-15px;font-family: monospace;">Freelance Developer.</sub>
           <br>
           <span class='icones'>
-            <a href='https://github.com/DantonMariano'><i class="fab fa-github"></i></a>
-            <a href='https://www.linkedin.com/in/Danton-Mariano/'><i class="fab fa-linkedin"></i></a>
-            <a href='./Danton Mariano CV.pdf' target="_blank"><i class="fas fa-file-invoice"></i></a>
+            <a target="_blank" href='https://github.com/DantonMariano'><i class="fab fa-github"></i></a>
+            <a target="_blank" href='https://www.linkedin.com/in/Danton-Mariano/'><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href='./Danton Mariano CV.pdf' target="_blank"><i class="fas fa-file-invoice"></i></a>
           </span>
           <div class="carousel">
-            <a href='https://www.calcularesistor.xyz'><img class="crsl-img" src="./1.jpg" alt="CalculaResistor"></a>
-            <a href='http://lapidareinstituto.rds.land/curso-online-injectables-and-facelift-fresh-frozen-specimen'><img class="crsl-img" src="./3.png" alt="lapidareinstituto"></a>
+            <a target="_blank" href='https://www.calcularesistor.xyz'><img class="crsl-img" src="./1.jpg" alt="CalculaResistor"></a>
+            <a target="_blank" href='http://lapidareinstituto.rds.land/curso-online-injectables-and-facelift-fresh-frozen-specimen'><img class="crsl-img" src="./3.png" alt="lapidareinstituto"></a>
           </div>
         </h1>
-        <canvas></canvas>
+      </div>
+      <div class="section">
+        <h1 class="main-title">
+            <b id="text__title" class="main-name">Um pouco sobre mim...</b><br>
+            <sub id="texto" style="position: relative;top:-10px;font-family: monospace;">
+                Olá, meu nome é Danton Mariano, 
+                tenho 20 anos e sou Desenvolvedor Fullstack na <a target="_blank" href="https://dataclick.com.br/site/">Dataclick</a>,
+                atualmente responsável pela <a target="_blank" href="https://lojadevantagens.com.br/">Loja de Vantagens</a> e pela em breve <a target="_blank" href="https://clickersports.com.br/">Clicker Shop</a>.<br>
+                Já fiz estágio no <a target="_blank" href="https://7bbm.cbm.sc.gov.br/">Sétimo Batalhão do Quartel de Bombeiros Militar de Santa Catarina</a> como Desenvolvedor PHP
+                e já trabalhei em uma filial da <a target="_blank" href="https://www.sysmo.com.br/">Sysmo</a> como Analista de Business Intelligence utilizando QlikView.
+                Essas sendo apenas algumas das minhas experiências.<br>
+                Fluente em inglês, aprendi sozinho a falar e ler, como também fui aprovado com <a target="_blank" href="https://www.cambridgeenglish.org/br/exams-and-tests/advanced/">Certificado de Cambridge</a> avançado, tirando 196 de 210 na prova.<br>
+                além de ser fluente nas seguintes técnologias
+            </sub>
+            <br>
+            <span id="bottom__icons" class='icones' style="opacity: 0;">
+                <img width='30' height='30' src='https://media4.giphy.com/media/eNAsjO55tPbgaor7ma/200w.gif?cid=82a1493bsttdl6see6129hssqeua9unu10lmvre7f0380w9w&rid=200w.gif&ct=s'> <img width='30' height='30' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'> <img width='30' height='30' src='https://www.codeigniter.com/assets/images/codeigniter4logo.png'> <img width='30' height='30' src='https://media0.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=6c09b952z5ehv9u5iie8z0r9larg0b9b8xlw2253m67kh1hn&rid=giphy.gif&ct=s'> <img width='30' height='30' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png'> <img width='30' height='30' src='https://image.flaticon.com/icons/png/512/919/919830.png'> <img width='30' height='30' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png'> <img width='30' height='30' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png'> <img width='30' height='30' src='https://www.elearningworld.org/wp-content/uploads/2019/04/MySQL.svg.png'> <img width='30' height='30' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png'> <img width='30' height='30' src='https://media1.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif?cid=6c09b9521pvj6c1rtjrnm00xzp9kfi0k1zjbfu7foh8t5swo&rid=giphy.gif&ct=s'> <img width='20' height='30' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'>
+            </span>
+          </h1>
       </div>
     </body>
-    <script src="./script.js"></script>
-    <script src="./texto.js"></script>
-    <script src="./jq.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="./texto.js" defer></script>
+    <script src="./jq.js" defer></script>
 </html>
