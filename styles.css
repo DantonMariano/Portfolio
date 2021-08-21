@@ -179,7 +179,11 @@ a:active {
     font-size: 30px;
     bottom: -30%;
   }
-
+  
+  #texto {
+    font-size: 12px;
+  }
+  
   .slick-list {
     width: 100px;
     position: relative;
