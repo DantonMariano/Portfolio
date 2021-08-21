@@ -174,7 +174,7 @@ a:active {
   #app {
     font-size: 12px;
   }
-
+  
   .icones {
     font-size: 30px;
     bottom: -30%;
@@ -183,7 +183,9 @@ a:active {
   #texto {
     font-size: 12px;
   }
-  
+  .icones:last-child{
+    bottom: 0 !important;
+  }
   .slick-list {
     width: 100px;
     position: relative;
