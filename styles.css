@@ -174,7 +174,16 @@ a:active {
   #app {
     font-size: 12px;
   }
-  
+
+  #pconly {
+    display:none !important;
+  }
+
+  #fluidJS {
+    height: 100%;
+    position: absolute;
+  }
+
   .icones {
     font-size: 30px;
     bottom: -30%;
