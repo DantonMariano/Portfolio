@@ -183,7 +183,11 @@ a:active {
     height: 100%;
     position: absolute;
   }
-
+  
+  html {
+    overflow:hidden;
+  }
+  
   .icones {
     font-size: 30px;
     bottom: -30%;
