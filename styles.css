@@ -184,7 +184,7 @@ a:active {
     position: absolute;
   }
   
-  html {
+  html,body {
     overflow:hidden;
   }
   
