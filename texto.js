@@ -36,5 +36,5 @@ let startWriting = () => {
     e já trabalhei em uma filial da <a target="_blank" href="https://www.sysmo.com.br/">Sysmo</a> como Analista de Business Intelligence utilizando QlikView.
     Essas sendo apenas algumas das minhas experiências<br>
     Fluente em inglês, aprendi sozinho a falar e ler, como também fui aprovado com <a target="_blank" href="https://www.cambridgeenglish.org/br/exams-and-tests/advanced/">Certificado de Cambridge</a> avançado, tirando 193 de 210 na prova.<br>
-    além de ser fluente nas seguintes técnologias:`).start().callFunction(showIcones);
+    além de ser fluente nas seguintes tecnologias:`).start().callFunction(showIcones);
 }
