@@ -156,6 +156,15 @@ a:active {
   color: #8c8c8c;
 }
 
+.PHProgrammer {
+    position: fixed;
+    right: 5vw;
+    bottom: -100px;
+    transition: all .4s ease-in-out;
+    opacity: 1;
+    filter: drop-shadow(0 3px 5px #000) blur(0);
+}
+
 .cr.function.appBigFont {
   font-size: 150%;
   line-height: 27px;
@@ -193,6 +202,10 @@ a:active {
     bottom: -30%;
   }
   
+  .PHProgrammer {
+    filter: drop-shadow(0 3px 50px #000) blur(10px);
+  }
+
   #texto {
     font-size: 12px;
   }
@@ -206,3 +219,4 @@ a:active {
     height: 100px;
   }
 }
+
