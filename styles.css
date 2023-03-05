@@ -9,14 +9,11 @@ html{
 }
 body {
   scroll-behavior: smooth;
-  overflow-y: visible;
-  overflow-x: hidden;
-  overflow:overlay;
 }
 html,
 body {
   background: rgb(254,237,1);
-  background: linear-gradient(90deg, rgba(63,143,205,1) 50.1%, rgba(254,237,1,1) 49.9%);
+  background: linear-gradient(90deg, rgba(63,143,205,1) 50.1%, rgba(254,237,1,1) 49.9%) !important;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -62,6 +59,6 @@ a:hover{
 
 @media only screen and (max-width : 767px) {
   html, body {
-    background: linear-gradient(180deg, rgba(63,143,205,1) 57.1%, rgba(254,237,1,1) 43.9%);
+    background: linear-gradient(180deg, rgba(63,143,205,1) 57.1%, rgba(254,237,1,1) 43.9%) !important;
   }
 }
