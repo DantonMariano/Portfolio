@@ -3,18 +3,18 @@
     "name": "Danton Mariano",
     "icons": [
       {
-        "src": "profile.jpeg",
-        "type": "image/jpeg",
+        "src": "profile.png",
+        "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "profile.jpeg",
-        "type": "image/jpeg",
+        "src": "profile.png",
+        "type": "image/png",
         "sizes": "512x512"
       }
     ],
-    "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
+    "id": "/",
+    "start_url": "/",
     "background_color": "#3b93c3",
     "display": "fullscreen",
     "scope": "/",
