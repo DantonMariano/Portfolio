@@ -54,9 +54,9 @@ a:hover{
   text-shadow: 3px 3px 0px #000, 0 0 3px #010101;
 }
 .hero__container--img {
-  filter: invert(100%) drop-shadow(2px 3px 0px #000);
-  -webkit-filter: invert(100%) drop-shadow(2px 3px 0px #000);
-  -moz-filter: invert(100%) drop-shadow(2px 3px 0px #000);
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  -moz-filter: invert(1);
   margin-right: 5px;
   position: relative;
   top: -5px;
