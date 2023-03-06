@@ -16,7 +16,7 @@
     "id": "/",
     "start_url": "/",
     "background_color": "#3B93C3",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "/",
     "theme_color": "#3B93C3",
     "description": "Portfolio do Danton Mariano"
