@@ -8,5 +8,7 @@ if ('serviceWorker' in navigator) {
       .catch(function(err) {
         console.log("Service Worker Failed to Register", err);
       })
-  
+    navigator.serviceWorker.unregister().then(function(registration) {
+        console.log('Service Worker Unregistered.');
+    })
   }
