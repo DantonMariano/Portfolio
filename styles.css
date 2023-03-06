@@ -10,6 +10,11 @@ html{
 body {
   scroll-behavior: smooth;
 }
+
+html {
+    background: rgba(59,147,195,1) !important;
+}
+
 html,
 body {
   background: rgb(254,237,1);
