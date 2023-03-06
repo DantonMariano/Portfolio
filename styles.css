@@ -54,7 +54,7 @@ a:hover{
   text-shadow: 3px 3px 0px #000, 0 0 3px #010101;
 }
 .hero__container--img {
-  filter: drop-shadow(1px 1px 1px #000);
+  filter: invert(1) drop-shadow(2px 3px 0px #000);
   margin-right: 5px;
   position: relative;
   top: -5px;
