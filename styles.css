@@ -49,6 +49,24 @@ a:hover{
 }
 /* scrollbar */
 
+.whatsapp__button {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 80px;
+    overflow: hidden;
+    background-color: #1bd741;
+}
+
+.whatsapp__button img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .hero__container {
   font-family: 'Tilt Warp';
   text-shadow: 3px 3px 0px #000, 0 0 3px #010101;
@@ -68,5 +86,15 @@ a:hover{
 @media only screen and (max-width : 767px) {
   html, body {
     background: linear-gradient(180deg, rgba(59,147,195,1) 57.1%, rgba(254,237,1,1) 43.9%) !important;
+  }
+  .whatsapp__button {
+    bottom: initial;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  .whatsapp__button img {
+    width: 90px;
+    height: 90px;
   }
 }
