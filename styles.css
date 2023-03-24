@@ -69,7 +69,7 @@ a:hover{
 
 .hero__container {
   font-family: 'Tilt Warp';
-  text-shadow: 3px 3px 0px #000, 0 0 3px #010101;
+  text-shadow: 2px 2px 0px #000, 0 0 3px #010101;
 }
 .hero__container--img {
   filter: invert(100%) drop-shadow(2px 3px 0px #000);
@@ -82,11 +82,33 @@ a:hover{
 .hero__container--profile {
   height: 300px;
 }
+.hero__container--image {
+    height: 300px;
+}
+.hero__container--smartphone {
+    height: 400px;
+    clip-path: polygon(30% 0%, 70% 0%, 75% 100%, 25% 100%);
+}
+
+.slick__hero {
+    position: relative;
+    left: -20px;
+}
+
+.hide__responsive {
+    display: initial;
+}
 
 @media only screen and (max-width : 767px) {
   html, body {
     background: linear-gradient(180deg, rgba(59,147,195,1) 57.1%, rgba(254,237,1,1) 43.9%) !important;
+    overflow: hidden;
   }
+
+  .hide__responsive {
+    display: none;
+  }
+
   .whatsapp__button {
     bottom: initial;
     top: 20px;

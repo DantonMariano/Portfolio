@@ -24,6 +24,8 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-252JM8ZGCW"></script>
         <script>
@@ -57,13 +59,72 @@
                 </div>
             </div>
         </div>
+        <div class="hide__responsive">
+            <div class="container" style="height:100%">
+                <div class="row d-flex flex-row justify-content-center align-items-center text-center" style="height:100%;color:white;">
+                    <div class="col-lg-4 col-md-6 col-sm-12 hero__container">
+                        <h1>Olá tudo bem?</h1>
+                        <hr>
+                        <span>Meu nome é Danton, mas pode me chamar de <b style="font-weight:500; font-size: large;">Jovem Dev</b>!</span>
+                        <p>
+                            Trabalho a mais de 3 anos no mercado como engenheiro de software, já atuei no exterior e sou especializado em desenvolvimento de sistemas para internet. <br> Hoje em dia utilizo dos conhecimentos que adiquiri ao longo dessa carreira para ajudar você à melhorar o seu negócio de uma maneira simples e inteligente utilizando a tecnologia!
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="mesa.png" alt="table picture" class="hero__container--image">    
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="height:100%">
+                <div class="row d-flex flex-row justify-content-center align-items-center text-center" style="height:100%;color:white;">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="smartphone.png" alt="smartphone picture" class="hero__container--smartphone">    
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 hero__container">
+                        <h1>Já pensou em ter o seu App?</h1>
+                        <hr>
+                        <p>
+                            Atualmente estou trabalhando com mais de 3 clientes, para potencializar as vendas deles através de um App super ergonômico e simples, feito para captar o seu cliente e não te dar dor de cabeça na hora de manusear ele! o App atualmente conta com produtos, categorias e painel de administração, porém futuramente irá também contar com integrações de Notas fiscais e Pagamentos via Boleto, cartão de Crédito e Pix.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="height:100%">
+                <div class="row d-flex flex-row justify-content-center align-items-center text-center" style="height:100%;color:white;">
+                    <div class="col-lg-4 col-md-6 col-sm-12 hero__container">
+                        <h1>Ficou interessado(a)?</h1>
+                        <hr>
+                        <p>
+                            Não deixe de entrar em contato! Eu faço isso porque amo meu trabalho e nada me dá mais satisfação do que ver o sorriso de um cliente que ficou feliz ao ter o seu sonho realizado, além de desenvolvedor, sou uma pessoa que está sempre em busca de procurar a melhor maneira de ajudar os outros, então não deixe de entrar em contato caso tenha alguma dúvida ou caso tenha alguma ideia, estou sempre aberto para colaborações! Muito Obrigado :)
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="youngdev.png" alt="youngdev picture" class="hero__container--image">    
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="whatsapp__button" title="Entre em contato comigo!">
             <a href="https://api.whatsapp.com/send/?phone=5547988223815&text=Ol%C3%A1%21%20vim%20do%20seu%20site%2C%20pode%20me%20ajudar%3F">
                 <img src="whatsapp.png" height="130px" alt="whatsapp">
             </a>
         </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        $(document).ready(()=>{
+            $('.slick__for').slick({
+                arrows: false,
+                fade: true,
+                asNavFor: '.slick__hero'
+            });
+            $('.slick__hero').slick({
+                asNavFor: '.slick__for',
+                arrows: false,
+                dots: true,
+                focusOnSelect: true
+            });
+        })
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
