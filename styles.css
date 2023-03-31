@@ -61,7 +61,7 @@ a:hover{
 }
 
 .whatsapp__button--wrapper {
-    --whatsapp__button__size: 160px;
+    --whatsapp__button__size: 120px;
     width: var(--whatsapp__button__size);
     height: var(--whatsapp__button__size);
     position: absolute;
@@ -107,6 +107,10 @@ a:hover{
     transform: translate(-50%, -50%);
 }
 
+hr {
+    color: white;
+}
+
 .hero__container {
   font-family: 'Tilt Warp';
   text-shadow: 2px 2px 0px #000, 0 0 3px #010101;
@@ -146,7 +150,7 @@ a:hover{
 
 @media only screen and (max-width : 767px) {
   html, body {
-    background: linear-gradient(180deg, rgba(59,147,195,1) 57.1%, rgba(254,237,1,1) 43.9%) !important;
+    background: linear-gradient(180deg, rgba(59,147,195,1) 45.1%, rgba(254,237,1,1) 43.9%) !important;
     overflow: hidden;
   }
 
