@@ -67,6 +67,16 @@
                 </div>
             </div>
         </div>
+        <div class="card card--cookie">
+            <div class="card-header">
+                <b>Cookies!</b> <img src="cookie.png" alt="Cookie" height="20px">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Esse site tem Cookies! mas não os que são de comer...</h5>
+                <p class="card-text">Utilizamos Cookies para armazenar dados temporários para melhorar sua experiência final como usuário, ao utilizar esse site você concorda em ter Cookies armazenados temporariamente em seu navegador para o melhor funcionamento do Website.</p>
+                <button onclick="agree()" class="btn block w-100 btn-primary">Aceito!</button>
+            </div>
+        </div>          
         <div class="hide__responsive">
             <div class="container" style="height:100%">
                 <div class="row d-flex flex-row justify-content-center align-items-center text-center" style="height:100%;color:white;">
@@ -135,39 +145,18 @@
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $(document).ready(()=>{
-            $('.slick__for').slick({
-                arrows: false,
-                fade: true,
-                asNavFor: '.slick__hero'
-            });
-            $('.slick__hero').slick({
-                asNavFor: '.slick__for',
-                arrows: false,
-                dots: true,
-                focusOnSelect: true
-            });
-        })
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.getRegistrations().then(function(registrations) {
 
-            for(let registration of registrations) {
-
-                    registration.unregister()
-
-            }}).catch(function(err) {
-
-                console.log('Service Worker registration failed: ', err);
-
-            });
-
-            navigator.serviceWorker.ready
-            .then(registration => {
-                registration.unregister();
-            })
-            .catch(error => {
-                console.error(error.message);
-            });
+        function agree () {
+            localStorage.setItem('firstTime', true)
+            $('.card--cookie').hide()
         }
+
+        $(document).ready(()=>{
+            let notFirstTime = localStorage.getItem('firstTime')
+
+            if (!notFirstTime) {
+                $('.card--cookie').show()
+            }
+        })
     </script>
 </html>

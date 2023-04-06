@@ -148,7 +148,24 @@ hr {
     display: initial;
 }
 
+.card--cookie {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    left: 50%;
+    z-index: 9999;
+    transform: translateX(-50%);
+}
+
 @media only screen and (max-width : 767px) {
+
+    .card--cookie {
+        width: 100%;
+        transform: translateX(0%);
+        left: 0;
+    }
+
   html, body {
     background: linear-gradient(180deg, rgba(59,147,195,1) 45.1%, rgba(254,237,1,1) 43.9%) !important;
     overflow: hidden;
