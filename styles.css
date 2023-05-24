@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+
+.font-slabo {
+  font-family: 'Slabo 27px', serif !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.clipping-mask {
+  --clip: 0%;
+  clip-path: polygon(0 0, var(--clip) 0, var(--clip) 100%, 0 100%);
+}
+
+.shadow-filter {
+  filter: drop-shadow(0 0 1px black) drop-shadow(0 1px 1px rgba(0,0,0,0.25)) drop-shadow(0 -1px 1px rgba(0,0,0,0.25)) drop-shadow(1px 0 1px rgba(0,0,0,0.25)) drop-shadow(-1px 0 1px rgba(0,0,0,0.25)) contrast(1.1); 
+}
