@@ -123,3 +123,13 @@ gsap.to('.last-container', {
     start: 'bottom top',
   }
 })
+gsap.to('.cat-hanging', {
+  duration: 1,
+  opacity:1,
+  delay: 30,
+  scrollTrigger: {
+    trigger: '.second-section',
+    start: 'bottom top',
+  }
+})
+
