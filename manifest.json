@@ -1,0 +1,23 @@
+{
+  "short_name": "Danton Mariano",
+  "name": "Danton Mariano",
+  "icons": [
+    {
+      "src": "og.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "og.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000000",
+  "description": "Danton Mariano"
+}
