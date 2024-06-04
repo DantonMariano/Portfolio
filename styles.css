@@ -1,120 +1,132 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
 /* Fonts */
 * {
   user-select: none;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
   scroll-behavior: smooth;
 }
 
 html {
-    background: rgba(59,147,195,1) !important;
+  background: rgba(59, 147, 195, 1) !important;
 }
 
 html,
 body {
-  background: rgb(254,237,1);
-  background: linear-gradient(90deg, rgba(59,147,195,1) 50.1%, rgba(254,237,1,1) 49.9%) !important;
+  background: rgb(254, 237, 1);
+  background: linear-gradient(90deg, rgba(59, 147, 195, 1) 50.1%, rgba(254, 237, 1, 1) 49.9%) !important;
   margin: 0;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
 }
-a{
+
+a {
   color: inherit;
-  text-decoration:none;
+  text-decoration: none;
 }
-a:hover{
+
+a:hover {
   color: inherit;
-  text-decoration:none;
+  text-decoration: none;
 }
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
-  
+
 }
+
 ::-webkit-scrollbar-track {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
+
 ::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 10px 10px #FFF;
   border: solid 3px transparent;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: #f1f1f1;
 }
+
 /* scrollbar */
 
 .whatsapp__button {
-    width: 100%;
-    height: 100%;
-    border-radius: 80px;
-    overflow: hidden;
-    background-color: #1bd741;
-    transform: rotate3d(0,0,0,0deg);
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.42);
-    transition: transform 1s, box-shadow 200ms;
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+  overflow: hidden;
+  background-color: #1bd741;
+  transform: rotate3d(0, 0, 0, 0deg);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.42);
+  transition: transform 1s, box-shadow 200ms;
 }
 
 .whatsapp__button--wrapper {
-    --whatsapp__button__size: 120px;
-    width: var(--whatsapp__button__size);
-    height: var(--whatsapp__button__size);
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+  --whatsapp__button__size: 120px;
+  width: var(--whatsapp__button__size);
+  height: var(--whatsapp__button__size);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
-.whatsapp__button--wrapper:hover .whatsapp__button{
-    transform: rotate3d(0, 1, 0, 180deg) !important;
-    box-shadow: -2px 2px 3px rgba(0,0,0,0.41) !important;
+
+.whatsapp__button--wrapper:hover .whatsapp__button {
+  transform: rotate3d(0, 1, 0, 180deg) !important;
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.41) !important;
 }
 
 .whatsapp__button--wrapper:hover::after {
-    opacity:1;
-    transform: rotate3d(0, 1, 0, 0deg) !important;
+  opacity: 1;
+  transform: rotate3d(0, 1, 0, 0deg) !important;
 }
 
 .whatsapp__button--wrapper::after {
-    --transition_time: 250ms;
-    content: 'Me Chama!';
-    color:#FFF;
-    font-family: 'Tilt Warp';
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    transform: rotate3d(0, 1, 0, 180deg) !important;
-    font-size: 1.5rem;
-    border-radius: 80px;
-    background-color: #1bd741;
-    text-align: center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    transition:transform 1s, opacity var(--transition_time) var(--transition_time);
+  --transition_time: 250ms;
+  content: 'Me Chama!';
+  color: #FFF;
+  font-family: 'Tilt Warp';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transform: rotate3d(0, 1, 0, 180deg) !important;
+  font-size: 1.5rem;
+  border-radius: 80px;
+  background-color: #1bd741;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s, opacity var(--transition_time) var(--transition_time);
 }
 
 .whatsapp__button img {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 hr {
-    color: white;
+  color: white;
 }
 
 .hero__container {
   font-family: 'Tilt Warp';
-  text-shadow: 2px 2px 0px #000, 0 0 3px #010101;
+  text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
 }
+
 .hero__container--img {
   filter: invert(100%) drop-shadow(2px 3px 0px #000);
   -webkit-filter: invert(100%) drop-shadow(2px 3px 0px #000);
@@ -125,49 +137,52 @@ hr {
 }
 
 .show__responsive {
-    display: none;
+  display: none;
 }
 
 .hero__container--profile {
   height: 300px;
 }
+
 .hero__container--image {
-    height: 300px;
+  height: 300px;
 }
+
 .hero__container--smartphone {
-    height: 400px;
-    clip-path: polygon(30% 0%, 70% 0%, 75% 100%, 25% 100%);
+  height: 400px;
+  clip-path: polygon(30% 0%, 70% 0%, 75% 100%, 25% 100%);
 }
 
 .slick__hero {
-    position: relative;
-    left: -20px;
+  position: relative;
+  left: -20px;
 }
 
 .hide__responsive {
-    display: initial;
+  display: initial;
 }
 
 .card--cookie {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    left: 50%;
-    z-index: 9999;
-    transform: translateX(-50%);
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  left: 50%;
+  z-index: 9999;
+  transform: translateX(-50%);
 }
 
 @media only screen and (max-width : 767px) {
 
-    .card--cookie {
-        width: 100%;
-        transform: translateX(0%);
-        left: 0;
-    }
+  .card--cookie {
+    width: 100%;
+    transform: translateX(0%);
+    left: 0;
+  }
 
-  html, body {
-    background: linear-gradient(180deg, rgba(59,147,195,1) 45.1%, rgba(254,237,1,1) 43.9%) !important;
+  html,
+  body {
+    background: linear-gradient(180deg, rgba(59, 147, 195, 1) 45.1%, rgba(254, 237, 1, 1) 43.9%) !important;
     overflow: hidden;
   }
 
@@ -185,6 +200,7 @@ hr {
     width: 100px;
     height: 100px;
   }
+
   .whatsapp__button img {
     width: 90px;
     height: 90px;
